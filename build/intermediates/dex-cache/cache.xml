@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_7675079f383ba4bf94a724d7716759241d7fb771.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database-connection\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="8010ae6ed32828a145b25ec97bc07b7a83c6318f">
+        <dex dex="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-database-connection-10.0.1_e139f0e855785a90b628a852f062fc10f9fa59e3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="5c6341beb6b720cc5ebfd907a31bcc8bd17d17a8">
+        <dex dex="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\pre-dexed\debug\instant-run_fd854ded63dcaa2eb9c01a8ffb82515a3b04e786.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-24.2.1_dbc32d27479eb0b4834737e2cc84b6ed000230c6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
+        <dex dex="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-10.0.1_e6a2f4ee0f0fdf030f60aa2662402460f2c4a2c1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_3da7218f5c41eb3b29b29b9460a19a6bcc959c09.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_a3923a86fb2f70a3034e7b86c4b9b03d7666e9af.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="8f128aeeb7e31271b28a7adb9dac1f3a6ed9f5e7">
+        <dex dex="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-database-10.0.1_8cda81c768ae158374d63f91caa5294e1b3e3d6b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.2.1_ef5ec06a1695c839ee7bc1703bd30fa08b5aea76.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-24.2.1_41da17bc197b42659666a253ace231a30d2f59b2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_3abcaa1852c36c1c6faf6b84684c94fe6f2c8d7c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-24.2.1_49fd9cdc7845005ead4e9fbec8295fc7be02ee2c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-24.2.1_859af26fabff9b6383779996b66aa11f5e2e35f0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-24.2.1_a8032126ceadde1ab004d43568a800d2225f69ee.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="eb0d830e3eabb9deb9ec44869cf7ac7ea1ad794c">
+        <dex dex="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-common-10.0.1_c413895af8ae59aff9220cbe64d0407bdf858808.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6116e0e7069de7fc259aac8e08b84f32c2038231">
+        <dex dex="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-analytics-impl-10.0.1_ef3f91a79aed4e3400dceb7ac88a7d208819c3fa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-24.2.1_59017659f82ed475647785f4a978d5e2b352ef79.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c5e6490573cd2cc8018417f60ddd251138b6ed61">
+        <dex dex="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-24.2.1_52ea3aba7bcde27c3c72ebb9ed5f69dfd13397a6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="486371f97baad8e607f332f20fee1d3dd00a731a">
+        <dex dex="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-iid-10.0.1_0426e23775715340b4d8353643bccfe74222d187.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\hp\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife-annotations\8.4.0\ea392375cf9ff59234a82e7928a204215ccc98cd\butterknife-annotations-8.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="ea392375cf9ff59234a82e7928a204215ccc98cd">
+        <dex dex="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\pre-dexed\debug\butterknife-annotations-8.4.0_10ec81c940d072b9e292e192c296a27cdf9f2dca.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
+        <dex dex="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-10.0.1_44c008912d2b0f19be8c7e0c9fa956d99a8e051e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_20be8e7a6dc6d665dabd1ec1d2e53a816f2247ad.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\hp\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\pre-dexed\debug\support-annotations-24.2.1_1e2d20fa6afef40c0873ea19bb8a74f84f527114.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\pre-dexed\debug\com.android.support-design-24.2.1_dd080ac753b7f26939a4103a5d2af42825506f23.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\exploded-aar\com.jakewharton\butterknife\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="a07818a1ecabdb149998823429cce555af4b9cba">
+        <dex dex="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\pre-dexed\debug\com.jakewharton-butterknife-8.4.0_a410a0ec06602ca31362921ad5d8dbc8642bf0a5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-24.2.1_9f01f7626ec0fd542a01da88cae30c55ba4d20a0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="433f4d6aa5f21f19552afe0e6c5eff0fedba73ad">
+        <dex dex="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-analytics-10.0.1_09f87408ea52290317758ba7797ae2568e84d2d2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-24.2.1_fb397695b3211078e21603ce925d8cdc002ecff9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-24.2.1_c90a95328c6b662baf75d69c39bec3078356d78d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="9a3f77145f6d9b8d2e42321a499cdec545ba2731">
+        <dex dex="C:\Users\hp\Documents\AndroidA\android-architecture-todo-mvp\MVP_Sample\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_fbcd9c5b093b7aa9f424cb341eaf689cd74a2fee.jar" />
+    </item>
+
+</items>

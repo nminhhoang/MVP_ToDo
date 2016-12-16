@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_task2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.mvp_sample.ui.addtask.AddTaskActivity"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/holo_green_light"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:layout_collapseMode="pin"
+        app:titleTextColor="@color/cardview_light_background"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:padding="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentStart="false">
+
+            <!-- This is a centered logo -->
+            <ImageButton
+                android:id="@+id/btnBack"
+                style="@style/Widget.AppCompat.ActionButton"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:src="@drawable/ic_keyboard_arrow_left_white_48dp"
+                android:scaleType="centerCrop"
+                android:padding="10dp"
+                android:paddingEnd="0dp"
+                android:paddingStart="0dp" />
+
+        </FrameLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.design.widget.FloatingActionButton
+        android:clickable="true"
+        app:fabSize="normal"
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/btnAddTask"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="32dp"
+        android:src="@android:drawable/ic_menu_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fabSize="normal"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:elevation="0dp"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="100dp"
+        android:layout_below="@+id/toolbar">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+
+            android:ems="10"
+            android:layout_below="@+id/txtTitle"
+            android:layout_alignRight="@+id/txtTitle"
+            android:layout_alignEnd="@+id/txtTitle"
+            android:id="@+id/txtTitle"
+            android:layout_alignLeft="@+id/txtTitle"
+            android:layout_alignStart="@+id/txtTitle"
+            android:gravity="top"
+            android:layout_margin="16dp"
+            android:padding="16dp"
+            android:ellipsize="start"
+            android:hint="Tiêu đề" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:inputType="textPersonName"
+
+            android:ems="10"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/txtContent"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textAlignment="viewStart"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="16dp"
+            android:hint="Nội dung" />
+    </LinearLayout>
+
+
+</RelativeLayout>
