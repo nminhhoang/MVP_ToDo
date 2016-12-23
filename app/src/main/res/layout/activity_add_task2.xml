@@ -49,14 +49,13 @@
     <android.support.design.widget.FloatingActionButton
         android:clickable="true"
         app:fabSize="normal"
-        app:srcCompat="@android:drawable/ic_input_add"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:id="@+id/btnAddTask"
         android:layout_marginRight="32dp"
         android:layout_marginBottom="32dp"
-        android:src="@android:drawable/ic_menu_save"
+        android:src="@drawable/ic_save_white_48dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         fabSize="normal"
@@ -108,7 +107,8 @@
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginStart="16dp"
-            android:hint="Nội dung" />
+            android:hint="Nội dung"
+            android:fontFamily="sans-serif" />
     </LinearLayout>
 
 

@@ -9,11 +9,12 @@ import com.example.hp.mvp_sample.ui.base.BaseView;
 
 public interface  AddTaskContract {
     interface View extends BaseView {
-
+        void EmptyTitle();
+        void AddComplete(boolean rs);
     }
 
     interface  Presenter extends BasePresenter<View> {
-
+        void AddTask(String mtxtTitle, String mtxtContent);
     }
 }
 

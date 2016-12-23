@@ -44,6 +44,6 @@
         fabSize="normal"
         app:elevation="7dp"
         app:backgroundTint="@android:color/holo_green_light"
-        app:srcCompat="@drawable/plus" />
+        android:src="@drawable/plus" />
 
 </RelativeLayout>

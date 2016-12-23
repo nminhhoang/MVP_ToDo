@@ -39,16 +39,14 @@ import static android.R.attr.value;
 import static android.R.id.list;
 
 public class TaskActivity extends BaseActivity implements TaskContract.View {
-
     @BindView(R.id.btnAddTask)
     protected FloatingActionButton btnAddTask;
     @BindView(R.id.lvTask)
     protected ListView mlvTask;
 
-    ArrayList<Task> items = new ArrayList<Task>();
-    private DatabaseReference mData = FirebaseDatabase.getInstance().getReference();
-
-    public MyAdapter adapter;
+    public static MyAdapter adapter;
+    public static ArrayList<Task> items;
+    private TaskPresenter mPresenter;
 
     public static Intent newIntent(Context context) {
         return new Intent(context, TaskActivity.class);
@@ -65,62 +63,20 @@ public class TaskActivity extends BaseActivity implements TaskContract.View {
         setContentView(R.layout.activity_task);
         ButterKnife.bind(this);
 
+        mPresenter = new TaskPresenter();
+        mPresenter.setView(this);
 
-        adapter = new MyAdapter(this, generateData());
-
+        adapter = new MyAdapter(this, mPresenter.generateData());
         mlvTask.setAdapter(adapter);
 
         btnAddTask.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //setContentView(R.layout.activity_home);
                 startActivity(AddTaskActivity.newIntent(getApplicationContext()));
                 finish();
             }
         });
     }
-
-    private ArrayList<Task> generateData(){
-        mData.orderByChild("title").addChildEventListener(new ChildEventListener(){
-
-            @Override
-            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-
-                Task task = dataSnapshot.getValue(Task.class);
-    //                    Toast.makeText(TaskActivity.this, task.getTitle() +"-"+task.getContent(),Toast.LENGTH_SHORT).show();
-                items.add(task);
-                adapter.notifyDataSetChanged();
-            }
-
-            @Override
-            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
-
-            }
-
-            @Override
-            public void onChildRemoved(DataSnapshot dataSnapshot) {
-
-            }
-
-            @Override
-            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
-
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        });
-
-
-        return items;
-    }
-    @Override
-    public void updateValue(String value) {
-
-    }
-
 
 }
 

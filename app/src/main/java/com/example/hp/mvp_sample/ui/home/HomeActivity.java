@@ -28,7 +28,6 @@ public class HomeActivity extends BaseActivity implements HomeContract.View{
 
     @Override
     protected void initializePresenter() {
-
     }
 
     @Override

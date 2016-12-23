@@ -1,7 +1,11 @@
 package com.example.hp.mvp_sample.ui.Task;
 
+import com.example.hp.mvp_sample.Task;
+import com.example.hp.mvp_sample.ui.MyAdapter;
 import com.example.hp.mvp_sample.ui.base.BasePresenter;
 import com.example.hp.mvp_sample.ui.base.BaseView;
+
+import java.util.ArrayList;
 
 /**
  * Created by hp on 10-Dec-16.
@@ -9,10 +13,9 @@ import com.example.hp.mvp_sample.ui.base.BaseView;
 
 public interface TaskContract {
     interface View extends BaseView {
-        void updateValue(String value);
     }
 
     interface  Presenter extends BasePresenter<View> {
-        void increaseValue();
+        ArrayList<Task> generateData();
     }
 }

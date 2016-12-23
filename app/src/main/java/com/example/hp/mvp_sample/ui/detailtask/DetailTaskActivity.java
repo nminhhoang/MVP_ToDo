@@ -33,7 +33,7 @@ import static android.webkit.WebSettings.PluginState.ON;
 import static java.security.AccessController.getContext;
 
 public class DetailTaskActivity extends BaseActivity implements DetailTaskContract.View{
-    private DetailTaskPresenter mPresenter;
+
 
     @BindView(R.id.cbComplete)
     protected CheckBox cbComplete;
@@ -46,7 +46,9 @@ public class DetailTaskActivity extends BaseActivity implements DetailTaskContra
     @BindView(R.id.btnBack)
     protected ImageButton btnBack;
 
-    private DatabaseReference mData = FirebaseDatabase.getInstance().getReference();
+//    private DatabaseReference mData = FirebaseDatabase.getInstance().getReference();
+    public Task tskDetail;
+    private DetailTaskPresenter mPresenter;
 
     public static Intent newIntent(Context context){
         return new Intent(context,DetailTaskActivity.class);
@@ -61,11 +63,62 @@ public class DetailTaskActivity extends BaseActivity implements DetailTaskContra
         startActivity(TaskActivity.newIntent(getApplicationContext()));
         finish();
     }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_task);
         ButterKnife.bind(this);
+
+        mPresenter = new DetailTaskPresenter();
+        mPresenter.setView(this);
+
+        Bundle bd = getIntent().getExtras();
+        String id = bd.getString("id");
+        mPresenter.GetTaskDetail(id);
+
+    }
+
+    @Override
+    public void CheckUpdateComplete(boolean result) {
+        if (result) {
+            Toast.makeText(DetailTaskActivity.this, "Lưu thành công!", Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(DetailTaskActivity.this, "Lưu thất bại!", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    @Override
+    public void CheckDeleteComplete(boolean result) {
+        if (result) {
+            Toast.makeText(DetailTaskActivity.this, "Xóa thành công!", Toast.LENGTH_SHORT).show();
+            ReturnHome();
+        } else {
+            Toast.makeText(DetailTaskActivity.this, "Xóa thất bại!", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    @Override
+    public void UpdateDetailTask(final Task tsk2) {
+        if(tsk2!= null) {
+            cbComplete.setChecked(tsk2.getComplete());
+            txtContent.setText(tsk2.getContent());
+            txtTitle.setText(tsk2.getTitle());
+
+            btnDelete.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    mPresenter.DeleteTask(tsk2.getId());
+                }
+            });
+
+            cbComplete.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    mPresenter.UpdateComplete(tsk2);
+                }
+            });
+        }
 
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,75 +126,5 @@ public class DetailTaskActivity extends BaseActivity implements DetailTaskContra
                 ReturnHome();
             }
         });
-        Bundle bd = getIntent().getExtras();
-        if (bd != null) {
-            String id = bd.getString("id");
-            Query queryRef = mData.orderByChild("id").equalTo(id);
-
-            queryRef.addChildEventListener(new ChildEventListener() {
-                @Override
-                public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-
-                    Task facts = dataSnapshot.getValue(Task.class);
-                    final Task tsk = new Task(facts);
-
-                    cbComplete.setChecked(facts.getComplete());
-                    txtContent.setText(facts.getContent());
-                    txtTitle.setText(facts.getTitle());
-                    btnDelete.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View view) {
-                            DatabaseReference mData = FirebaseDatabase.getInstance().getReference();
-                            mData.child(tsk.getId()).removeValue();
-                            ReturnHome();
-                        }
-                    });
-
-                    cbComplete.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View view) {
-                            tsk.changeComplete();
-                            DatabaseReference mData = FirebaseDatabase.getInstance().getReference();
-                            mData.child(tsk.getId()).setValue(tsk, new DatabaseReference.CompletionListener() {
-                                @Override
-                                public void onComplete(DatabaseError databaseError, DatabaseReference databaseReference) {
-                                    if(databaseError ==  null){
-                                        Toast.makeText(DetailTaskActivity.this, "Lưu thành công!",Toast.LENGTH_SHORT).show();
-                                    }
-                                    else{
-                                        Toast.makeText(DetailTaskActivity.this, "Lưu thất bại!",Toast.LENGTH_SHORT).show();
-                                    }
-                                }
-                            });
-                        }
-                    });
-                }
-
-                @Override
-                public void onChildChanged(DataSnapshot dataSnapshot, String s) {
-
-                }
-
-                @Override
-                public void onChildRemoved(DataSnapshot dataSnapshot) {
-
-                }
-
-                @Override
-                public void onChildMoved(DataSnapshot dataSnapshot, String s) {
-
-                }
-
-                @Override
-                public void onCancelled(DatabaseError databaseError) {
-
-                }
-            });
-
-
-
-        }
     }
-
-
 }

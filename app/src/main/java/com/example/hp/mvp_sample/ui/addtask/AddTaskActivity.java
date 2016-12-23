@@ -38,7 +38,6 @@ import static com.example.hp.mvp_sample.R.id.txtTitle;
 public class AddTaskActivity extends BaseActivity implements AddTaskContract.View  {
     @BindView(R.id.btnAddTask)
     protected FloatingActionButton mBtnAddTask;
-
     @BindView(R.id.txtTitle)
     protected EditText mtxtTitle;
     @BindView(R.id.txtContent)
@@ -64,6 +63,9 @@ public class AddTaskActivity extends BaseActivity implements AddTaskContract.Vie
         setContentView(R.layout.activity_add_task2);
         ButterKnife.bind(this);
 
+        mPresenter = new AddTaskPresenter();
+        mPresenter.setView(this);
+
         mData = FirebaseDatabase.getInstance().getReference();
 
         btnBack.setOnClickListener(new View.OnClickListener() {
@@ -76,28 +78,7 @@ public class AddTaskActivity extends BaseActivity implements AddTaskContract.Vie
         mBtnAddTask.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-
-                if (!mtxtTitle.getText().toString().matches("")) {
-
-                    Task tsk = new Task(mtxtTitle.getText().toString(), mtxtContent.getText().toString());
-
-                    mData.child(tsk.getId()).setValue(tsk, new DatabaseReference.CompletionListener() {
-                        @Override
-                        public void onComplete(DatabaseError databaseError, DatabaseReference databaseReference) {
-                            if (databaseError == null) {
-                                Toast.makeText(AddTaskActivity.this, "Lưu thành công!", Toast.LENGTH_SHORT).show();
-                            } else {
-                                Toast.makeText(AddTaskActivity.this, "Lưu thất bại!", Toast.LENGTH_SHORT).show();
-                            }
-                        }
-                    });
-
-                    ReturnHome();
-
-                }
-                else{
-                    Toast.makeText(AddTaskActivity.this, "Tiêu đề rỗng", Toast.LENGTH_SHORT).show();
-                }
+                mPresenter.AddTask(mtxtTitle.getText().toString(),mtxtContent.getText().toString());
             }
         });
 
@@ -106,5 +87,20 @@ public class AddTaskActivity extends BaseActivity implements AddTaskContract.Vie
     public void ReturnHome(){
         startActivity(TaskActivity.newIntent(getApplicationContext()));
         finish();
+    }
+
+    @Override
+    public void EmptyTitle() {
+        Toast.makeText(AddTaskActivity.this, "Tiêu đề rỗng", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void AddComplete(boolean rs) {
+        if (rs) {
+            Toast.makeText(AddTaskActivity.this, "Thêm thành công!", Toast.LENGTH_SHORT).show();
+            ReturnHome();
+        } else {
+            Toast.makeText(AddTaskActivity.this, "Thêm thất bại!", Toast.LENGTH_SHORT).show();
+        }
     }
 }
